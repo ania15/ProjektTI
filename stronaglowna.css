@@ -9,6 +9,7 @@
    body::before{
     content: "";
     background-image: url('zdjecia/logo.jpg');
+    background-size: 260px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -22,6 +23,7 @@
     font-family: 'Cambria', Arial, Helvetica, sans-serif;
     padding: 8px 10px;
     list-style-type: none;
+    
    }
    #menu li {
     float: left; 
