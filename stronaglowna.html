@@ -5,6 +5,51 @@
 <link rel="stylesheet" type="text/css" href="stronaglowna.css">
 <title>Szkoła muzyczna</title>
 <script>
+	function plus_slides(n) {
+	  show_slides(slide_index += n);
+	}
+
+	function current_slide(n) {
+	  show_slides(slide_index = n);
+	}
+
+	function show_slides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("slides");
+	  let dots = document.getElementsByClassName("demo");
+	  let caption_text = document.getElementById("caption");
+	  if (n > slides.length) {slide_index = 1}
+	  if (n < 1) {slide_index = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slide_index-1].style.display = "block";
+	  dots[slide_index-1].className += " active";
+	  caption_text.innerHTML = dots[slide_index-1].alt;
+	}
+	
+	
+	
+
+
+function show_more_less(dots, more, button_more) {
+	  var dots = document.getElementById(dots);
+	  var more_text = document.getElementById(more);
+	  var b_text = document.getElementById(button_more);
+
+	  if (dots.style.display === "none") {
+		dots.style.display = "inline";
+		b_text.innerHTML = "Pokaż więcej"; 
+		more_text.style.display = "none";
+	  } else {
+		dots.style.display = "none";
+		b_text.innerHTML = "Pokaż mniej"; 
+		more_text.style.display = "inline";
+	  }
+	}
 
     </script>
 </head> 
@@ -48,8 +93,10 @@
         </li>
     </ul>
     </div>
-  
 
+    
+    
+    
 
     <footer>
         <div class="footer">
