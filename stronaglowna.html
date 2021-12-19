@@ -94,9 +94,125 @@ function show_more_less(dots, more, button_more) {
     </ul>
     </div>
 
+
+    <br><br><br>
+
+<div class="slider">
+
+	<h2>Najnowsze zdjęcia</h2>
+
+	<div class="container">
+	  <div class="slides">
+		<div class="numbertext">1 / 6</div>
+		<img class="img_slider" src="zdjecia/slider1.jpg" >
+	  </div>
+
+	  <div class="slides">
+		<div class="numbertext">2 / 6</div>
+		<img class="img_slider" src="zdjecia/slider2.jpg">
+	  </div>
+
+	  <div class="slides">
+		<div class="numbertext">3 / 6</div>
+		<img class="img_slider" src="zdjecia/slider3.jpg">
+	  </div>
+		
+	  <div class="slides">
+		<div class="numbertext">4 / 6</div>
+		<img class="img_slider" src="zdjecia/slider4.jpg">
+	  </div>
+
+	  <div class="slides">
+		<div class="numbertext">5 / 6</div>
+		<img class="img_slider" src="zdjecia/slider5.jpg">
+	  </div>
+		
+	  <div class="slides">
+		<div class="numbertext">6 / 6</div>
+		<img class="img_slider" src="zdjecia/slider6.jpg">
+	  </div>
+		
+	  <a class="prev" onclick="plus_slides(-1)">❮</a>
+	  <a class="next" onclick="plus_slides(1)">❯</a>
+
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+
+	  <div class="row">
+		<div class="column">
+		  <img class="demo"  src="zdjecia/slider1.jpg" onclick="current_slide(1)" alt="Nasi uczniowie na kocercie w Krakowie">
+		</div>
+		<div class="column">
+		  <img class="demo" src="zdjecia/slider2.jpg" onclick="current_slide(2)" alt="Warsztaty letnie 2021">
+		</div>
+		<div class="column">
+		  <img class="demo" src="zdjecia/slider3.jpg" onclick="current_slide(3)" alt="Lekcje grupowe">
+		</div>
+		<div class="column">
+		  <img class="demo"  src="zdjecia/slider4.jpg" onclick="current_slide(4)" alt="Rytmika dla najmłodszych">
+		</div>
+		<div class="column">
+		  <img class="demo"  src="zdjecia/slider5.jpg" onclick="current_slide(5)" alt="Nauka czytania nut">
+		</div>    
+		<div class="column">
+		  <img class="demo"  src="zdjecia/slider6.jpg" onclick="current_slide(6)" alt="Lekcje online">
+		</div>
+	  </div>
+	  
+	</div>
+	
+	<script>
+		let slide_index = 1;
+		show_slides(slide_index);
+	</script>
+
+</div>
+
+<br><br><br>
+
+
+
+<div class="news">
+	<h1>Aktualności</h1>
+	   
+	<h3>Koncert świąteczny </h3>
+	<p>W zeszłym tygodniu 20.12.2021r. grupa uczniow z naszej szkoły wzieła udział w corocznycm koncerie świątecznym.
+		<span id="dots_1">...</span> 
+		<span id="more_1">Tutaj wiecej o koncercie</span>
+	</p>
+
+	<button onclick="show_more_less('dots_1', 'more_1', 'button_more_1')" id="button_more_1" class="button_a">Pokaż więcej</button>
+	<br><br>
+
+	<h3>Konkurs "Młodzi Muzycy"</h3>
+	<p>Jest nam niezmiernie miło ogłosić, że jedna z naszych uczennic zdobyła drugie miejsce w Ogólnopolskim Konkursie "Młodzi Muzycy".
+		<span id="dots_2">...</span> 
+		<span id="more_2">Tutaj więcej o konkursie</span>
+	</p>
+
+	<button onclick="show_more_less('dots_2', 'more_2', 'button_more_2')" id="button_more_2" class="button_a">Pokaż więcej</button>
+	<br><br>
+
+	<h3>Warsztaty Letnie 2022</h3>
+	<p>Uwaga! W dniach 21-30.07.2022r. organizujemy kolejne Warsztaty Letnie. Wszystkich zainteresowanych prosimy o kontakt.
+		<span id="dots_3">...</span> 
+		<span id="more_3">Tutaj więcej o warsztatach.</span>
+	</p>
+
+	<button onclick="show_more_less('dots_3', 'more_3', 'button_more_3')" id="button_more_3" class="button_a">Pokaż więcej</button>
+	<br><br>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
     
     
     
+    
+=======
+>>>>>>> ffc473693748087a62aec451853c6786bb077c66
 
     <footer>
         <div class="footer">
