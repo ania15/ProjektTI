@@ -15,7 +15,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: 0.3;
    }
    #menu {
     width: 900px;
@@ -133,7 +133,7 @@
 	text-align:center;
 }
 
-.img_slider {
+#slide {
   vertical-align: middle;
   width:100%;
 }
@@ -206,6 +206,8 @@
 
 .demo {
   opacity: 0.6;
+  vertical-align: middle;
+  width:100%;
 }
 
 .active,
