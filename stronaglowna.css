@@ -23,6 +23,7 @@
     font-family: 'Cambria', Arial, Helvetica, sans-serif;
     padding: 8px 10px;
     list-style-type: none;
+    z-index: 1;
     
    }
    #menu li {
@@ -51,6 +52,7 @@
     left: 0;
     width: 100%;
     display: none;
+
    }
    #menu li {
     border-bottom: 5px solid black;
@@ -58,6 +60,7 @@
    
    #menu li:hover ul {
     display: block;
+    z-index: 1;
    } 
 
       
