@@ -17,6 +17,7 @@
     left: 0px;
     opacity: 0.3;
    }
+ 
    #menu {
     width: 900px;
     margin: auto;
@@ -24,7 +25,7 @@
     padding: 8px 10px;
     list-style-type: none;
     z-index: 1;
-    
+
    }
    #menu li {
     float: left; 
@@ -93,6 +94,7 @@
      color: white;
      font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
      text-transform: uppercase;
+     
    }
   
    .footer-links-sub li a{
@@ -100,6 +102,7 @@
      color: white;
      padding: 5px 0;
      display: block;
+     
    }
    .footer-header{
        color: white;
@@ -117,16 +120,17 @@
 
    .footer-social {
      text-align: center;
-     width:150px;
+     width:180px;
    }
    
    .footer-social ul {
      display: block;
      list-style-type: none;
+     
    }
 
    .footer-social li a {
-     float: left;
+    float: left;
      margin: 0 15px 0 0;
      padding: 0;
    }
@@ -134,6 +138,9 @@
    
   h2 {
 	text-align:center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Cambria', Arial, Helvetica, sans-serif;
 }
 
 #slide {
@@ -260,4 +267,12 @@
   color: white;
   box-shadow: 0 5px #666;
   transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 650px) {
+  .footer{
+    display: inline;
+    justify-content: center;
+  }
 }

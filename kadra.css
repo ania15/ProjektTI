@@ -62,9 +62,12 @@
   z-index: 1;
  } 
 
- h1{
-   text-align: center;
-   clear: both;
+ #header{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Cambria', Arial, Helvetica, sans-serif;
  }
  .row{
    display: flex;
@@ -76,6 +79,7 @@
    flex: 50%;
    padding: 20px 20px 20px 20px;
    z-index: 0;
+   
  }
 
 @media screen and (max-width: 650px) {
@@ -151,7 +155,7 @@
 
  .footer-social {
    text-align: center;
-   width:150px;
+   width:180px;
  }
  
  .footer-social ul {
