@@ -73,6 +73,7 @@
     height: 150px; 
     width: 100%;
     padding: 20px 0 0 0;
+    font-family: 'Cambria', Arial, Helvetica, sans-serif;
    }
    
    
@@ -85,10 +86,11 @@
      display: block;
      list-style-type: none;
      margin: 0;
-     padding: 3px 0;
+     padding: 1px 0;
      color: white;
      font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
      text-transform: uppercase;
+     font-family: 'Cambria', Arial, Helvetica, sans-serif;
    }
   
    .footer-links-sub li a{
