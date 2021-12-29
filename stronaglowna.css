@@ -238,7 +238,19 @@
 	position: relative;
 	width: 50%;
 	margin:auto;
+	padding: 20px;
+	background-color:white;
 }
+
+.news_img {
+	position:relative;
+	margin: auto;
+	display:block;
+	padding: 20px;
+	width:50%;
+	height:20%;
+}
+
 
 #more_1 {display: none;}
 #more_2 {display: none;}
@@ -272,6 +284,11 @@
   transform: translateY(2px);
 }
 
+#button_news {
+	display:block;
+    margin-left:  auto;
+    margin-right: 0;
+}
 
 @media screen and (max-width: 650px) {
   .footer{
