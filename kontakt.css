@@ -19,7 +19,7 @@
   
    #menu {
     width: 900px;
-    margin: auto;
+    margin: 0 0 0 340px;
     font-family: 'Cambria', Arial, Helvetica, sans-serif;
     padding: 8px 10px;
     list-style-type: none;
