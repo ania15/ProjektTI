@@ -60,10 +60,14 @@ display: none;
 #menu li:hover{
  background-color: grey;
 }
+
 #menu li:hover ul {
 display: block;
 z-index: 2;
 } 
+.icon{
+  display: none;
+}
       
    .footer {
     background-color: black;
@@ -84,6 +88,8 @@ z-index: 2;
    
    .footer-list-wrap {
      float: left;
+     text-align: center;
+     font-size: 12px;
    }
    
    
@@ -122,6 +128,7 @@ z-index: 2;
    .footer-social {
      text-align: center;
      width:180px;
+     justify-content: center;
    }
    
    .footer-social ul {
@@ -290,8 +297,50 @@ z-index: 2;
 }
 
 @media screen and (max-width: 650px) {
-  .footer{
-    display: inline;
+
+ #menu{
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   
+ }
+ #menu li{
+   text-align: center;
+ }
+ #menu li ul{
+   float:none;
+   text-align: center;
+ }
+ 
+
+
+  .footer {
+    flex-wrap: wrap;
+    background-color: black;
+    height:300px;
+    font-size:small;
+    align-items: center;
     justify-content: center;
+    margin:0;
+    padding:0;
   }
+  .footer .col{
+    flex:50%;
+  }
+  .footer-list-wrap{
+    position: absolute;
+    top:20px;
+    margin: 5px;
+  }
+  .footer-social{
+    position:absolute;
+    left: 50px;
+    bottom: 30px;
+  }
+  #logo-footer{
+    position: absolute;
+    bottom:30px;
+    right:60px;
+  }
+  
 }
