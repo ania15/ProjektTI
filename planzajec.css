@@ -79,7 +79,8 @@ z-index: 2;
 }      
 
    
-.footer {
+   
+   .footer {
     background-color: black;
     display:flex;
     justify-content: space-around; 
@@ -152,7 +153,6 @@ z-index: 2;
      margin: 0 15px 0 0;
      padding: 0;
    }
-
 
    .button_a {
   background-color: black;
