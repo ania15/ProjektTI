@@ -16,6 +16,7 @@
   left: 0px;
   opacity: 0.3;
  }
+
 #main_logo_img {
 	display: block;
 	margin-left: auto;
@@ -23,14 +24,12 @@
 	opacity:0.99;
 	background-color:white;
 	width:65%;
- }
+}
  
  #main_logo {
-	 padding:20px;
+	padding:20px;
  }
  
- 
-
 
 #menu-container{
  display:flex;
