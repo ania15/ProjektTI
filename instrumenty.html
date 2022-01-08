@@ -8,7 +8,17 @@
   <link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
 
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.button').click(function (e) {
 
+        var targetBox = $(this).attr('id');
+        $('.text').not(targetBox).hide(1000);
+        $(targetBox).toggle(1000);
+
+      });
+    });
+  </script>
 </head>
   
 <div id="main_logo" >
@@ -113,17 +123,7 @@
   </div>
 
 
-  <script>
-    $(document).ready(function () {
-      $('.button').click(function (e) {
-
-        var targetBox = $(this).attr('id');
-        $('.text').not(targetBox).hide(1000);
-        $(targetBox).toggle(1000);
-
-      });
-    });
-  </script>
+  
 
 
 
