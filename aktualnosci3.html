@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="aktualnosci3.css">
+	<title>Aktualności</title>
+	<link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
+
+	<script>
+		function show_more_less(dots, more, button_more) {
+			var dots = document.getElementById(dots);
+			var more_text = document.getElementById(more);
+			var b_text = document.getElementById(button_more);
+
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				b_text.innerHTML = "Pokaż więcej";
+				more_text.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				b_text.innerHTML = "Pokaż mniej";
+				more_text.style.display = "inline";
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+<div id="main_logo" >
+	<a href="stronaglowna.html">
+		<img id="main_logo_img" src="zdjecia/logo_glowne_v3.jpg"></img>
+	</a>
+</div>
+	
+	<div id="menu-container">
+		<ul id="menu" class="Menu-container">
+			<li><a href="#" class="sub1">O NAS</a>
+				<ul>
+					<li><a href="szkola.html">SZKOŁA</a></li>
+					<li><a href="kadra.html">KADRA</a></li>
+					<li><a href="osiagniecia.html">OSIĄGNIĘCIA</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#" class="sub2">OFERTA</a>
+				<ul>
+					<li><a href="cennik.html">CENNIK</a></li>
+					<li><a href="instrumenty.html">INSTRUMENTY</a></li>
+					<li><a href="rodzajezajec.html">RODZAJE ZAJĘĆ</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">STREFA UCZNIA</a>
+				<ul>
+					<li><a href="planzajec.html">PLAN ZAJĘĆ</a></li>
+					<li><a href="materialy.html">MATERIAŁY</a></li>
+				</ul>
+			</li>
+			<li><a href="kontakt.html">KONTAKT</a></li>
+			<li><a href="#">WIĘCEJ...</a>
+				<ul>
+					<li><a href="galeria.html">GALERIA</a></li>
+					<li><a href="aktualnosci.html">AKTUALNOŚCI</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="news">
+		<h1>Aktualności</h1>
+
+		<h3>Koncert świąteczny </h3>
+		<img class="news_img" src="zdjecia/news_1.jpg"></img>
+		<p>W zeszłym tygodniu 20.12.2021r. grupa uczniow z naszej szkoły wzieła udział w corocznycm koncerie
+			świątecznym.
+			<span id="dots_1">...</span>
+			<span id="more_1">Tutaj wiecej o koncercie. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+				reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non proident,
+				sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		</p>
+
+		<button onclick="show_more_less('dots_1', 'more_1', 'button_more_1')" id="button_more_1" class="button_a">Pokaż
+			więcej</button>
+		<br><br>
+
+		<h3>Konkurs "Młodzi Muzycy"</h3>
+		<img class="news_img" src="zdjecia/news_2.jpg"></img>
+		<p>Jest nam niezmiernie miło ogłosić, że jedna z naszych uczennic zdobyła drugie miejsce w Ogólnopolskim
+			Konkursie "Młodzi Muzycy".
+			<span id="dots_2">...</span>
+			<span id="more_2">Tutaj więcej o konkursie</span>
+		</p>
+
+		<button onclick="show_more_less('dots_2', 'more_2', 'button_more_2')" id="button_more_2" class="button_a">Pokaż
+			więcej</button>
+		<br><br>
+
+		<h3>Warsztaty Letnie 2022</h3>
+		<p>Uwaga! W dniach 21-30.07.2022r. organizujemy kolejne Warsztaty Letnie. Wszystkich zainteresowanych prosimy o
+			kontakt.
+			<span id="dots_3">...</span>
+			<span id="more_3">Tutaj więcej o warsztatach.</span>
+		</p>
+
+		<button onclick="show_more_less('dots_3', 'more_3', 'button_more_3')" id="button_more_3" class="button_a">Pokaż
+			więcej</button>
+		<br><br>
+	<div id="button_next">
+	<button class="button_a"><a href="aktualnosci.html" class="link">1</a></button>
+    <button class="button_a"><a href="aktualnosci2.html" class="link">2</a></button>
+    <button class="button_a"><a href="aktualnosci3.html" class="link" id="current_link">3</a></button>
+    </div>
+	
+	</div>
+
+	<footer>
+		<div class="footer">
+			<div class="col">
+				<div class="footer-list-wrap">
+					<h6 class="footer-header">KONTAKT</h6>
+					<ul class="footer-links-sub">
+						<li>Telefon komórkowy: 123456789</li>
+						<li>Telefon stacjonarny: 987654321</li>
+						<li>Adres: al. Adama Mickiewicza 30, Kraków </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div class="footer-list-wrap">
+					<h6 class="footer-header">Godziny otwarcia sekretariatu:</h6>
+					<ul class="footer-links-sub">
+						<li>Poniedziałek: 8.00-16.00</li>
+						<li>Wtorek: 10.00-14.00</li>
+						<li>Środa: 8.00-16.00</li>
+						<li>Czwartek: 10.00-14.00</li>
+						<li>Piątek: 8.00-16.00</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div class="footer-social">
+					<h6 class="footer-header">Nasze media społecznościowe</h6>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/">
+								<img width="30" alt="Polub nas na Facebooku!" src="zdjecia/facebook.png">
+							</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="http://instagram.com/">
+								<img width="30" alt="Obserwuj nas na Instagramie!" src="zdjecia/instagram.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/">
+								<img width="30" alt="Obserwuj nas na Twitterze!" src="zdjecia/twitter.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<img width="30" alt="Subskrybuj nasz kanał na YouTube!" src="zdjecia/youtube.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div>
+					<img id="logo-footer" width="140" src="zdjecia/logo.jpg">
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
