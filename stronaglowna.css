@@ -310,8 +310,7 @@ z-index: 2;
 }
 
 @media screen and (max-width: 650px) {
-
- #menu{
+#menu{
    display: flex;
    flex-direction: column;
    width:100%;
@@ -319,11 +318,13 @@ z-index: 2;
  }
  #menu li{
    text-align: center;
+   justify-content: center;
  }
  #menu li ul{
    float:none;
    text-align: center;
- }
+   overflow: hidden;
+ } 
  
 
 
