@@ -1,21 +1,22 @@
 
 * {
     
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-   }
-   body::before{
-    content: "";
-    background-image: url('zdjecia/logo.jpg');
-    background-size: 260px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
-   }
+ }
+
+ body::before{
+  content: "";
+  background-image: url('zdjecia/logo.jpg');
+  background-size: 260px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+ }
 
 #main_logo_img {
 	display: block;
@@ -29,14 +30,13 @@
  #main_logo {
 	 padding:20px;
  }
-  
+
 #menu-container{
  display:flex;
  justify-content: center;
  position: relative;
  text-align: center;
-} 
-
+}  
 #menu {
 font-family: 'Cambria', Arial, Helvetica, sans-serif;
 list-style-type: none;
@@ -78,7 +78,10 @@ display: none;
 display: block;
 z-index: 2;
 } 
-
+.icon{
+  display: none;
+}
+      
    .footer {
     background-color: black;
     display:flex;
@@ -152,3 +155,115 @@ z-index: 2;
      margin: 0 15px 0 0;
      padding: 0;
    }
+
+   
+  
+
+@media screen and (max-width: 650px) {
+#menu{
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   
+ }
+ #menu li{
+   text-align: center;
+   justify-content: center;
+ }
+ #menu li ul{
+   float:none;
+   text-align: center;
+   overflow: hidden;
+ } 
+ 
+
+
+  .footer {
+    flex-wrap: wrap;
+    background-color: black;
+    height:300px;
+    font-size:small;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0;
+  }
+  .footer .col{
+    flex:50%;
+  }
+  .footer-list-wrap{
+    position: absolute;
+    top:20px;
+    margin: 5px;
+  }
+  .footer-social{
+    position:absolute;
+    left: 50px;
+    bottom: 30px;
+  }
+  #logo-footer{
+    position: absolute;
+    bottom:30px;
+    right:60px;
+  }
+  
+}
+
+
+#contact-info{
+  margin:auto;
+  position:relative;
+  display:flex;
+  padding: 20px 100px 20px 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.ikona {
+  position: relative;
+  flex:50%;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: white;
+  margin: 20px;
+  max-width: 425px;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width:150px;
+  height:auto;
+  margin:auto
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+  color:white;
+  font-family: 'Cambria', Arial, Helvetica, sans-serif;
+}
+
+.ikona:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  padding:10px;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
