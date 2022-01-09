@@ -309,22 +309,32 @@ z-index: 2;
     margin-right: 0;
 }
 
-@media screen and (max-width: 650px) {
-#menu{
-   display: flex;
-   flex-direction: column;
-   width:100%;
    
+@media screen and (max-width: 900px) {
+  #menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding:0;
+  }
+  #menu li ul{
+   position: absolute;
+   top: 0;
+   left: 180px;
+  } 
+  
  }
- #menu li{
-   text-align: center;
-   justify-content: center;
- }
- #menu li ul{
-   float:none;
-   text-align: center;
-   overflow: hidden;
- } 
+
+@media screen and (max-width: 650px) {
+
+#main_logo_img, #main_logo{
+  width:100%;
+  margin:auto;
+  padding:0;
+}
+
  
 
 
