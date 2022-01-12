@@ -11,6 +11,26 @@
 
 </head>
 
+<script>
+function openAchv(evt, year) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  
+	  tablinks = document.getElementsByClassName("tablinks");
+	  
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  document.getElementById(year).style.display = "block";
+	  evt.currentTarget.className += " active";
+}
+</script>
+
 <body>
   <div id="main_logo" >
 		<a href="stronaglowna.html">
@@ -52,66 +72,99 @@
     </ul>
   </div>
 
+<div class="achievements">
+	<div class="tab">
+	  <button class="tablinks" id="tablink_1" onclick="openAchv(event, '2022')">2022</button>
+	  <button class="tablinks" onclick="openAchv(event, '2021')">2021</button>
+	  <button class="tablinks" onclick="openAchv(event, '2020')">2020</button>
+	</div>
 
-  <footer>
-    <div class="footer">
-      <div class="col">
-        <div class="footer-list-wrap">
-          <h6 class="footer-header">KONTAKT</h6>
-          <ul class="footer-links-sub">
-            <li>Telefon komórkowy: 123456789</li>
-            <li>Telefon stacjonarny: 987654321</li>
-            <li>Adres: al. Adama Mickiewicza 30, Kraków </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col">
-        <div class="footer-list-wrap">
-          <h6 class="footer-header">Godziny otwarcia sekretariatu:</h6>
-          <ul class="footer-links-sub">
-            <li>Poniedziałek: 8.00-16.00</li>
-            <li>Wtorek: 10.00-14.00</li>
-            <li>Środa: 8.00-16.00</li>
-            <li>Czwartek: 10.00-14.00</li>
-            <li>Piątek: 8.00-16.00</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col">
-        <div class="footer-social">
-          <h6 class="footer-header">Nasze media społecznościowe</h6>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/">
-                <img width="30" alt="Polub nas na Facebooku!" src="zdjecia/facebook.png">
-              </a>
-            </li>
+	<div id="2022" class="tabcontent">
+	  <h3>2022</h3>
+	  <p>Katarzyna Nowak i Sara Leokadia Sudoł zajęły IV miejsce na III Międzynarodowym Konkursie "Duety". <img src="zdjecia/news_1_4.jpg"></img> <button class="button_a"><a href="aktualnosci.html#news_4">Przeczytaj więcej</a></button></p> 
+	  <p>Alicja Kowalska zajęła II miejsce na III Ogólnopolskim Konkursie "Młodzi muzycy". <img src="zdjecia/news_2.jpg"> <button class="button_a"><a href="aktualnosci.html#news_2">Przeczytaj więcej</a></button></p> 
+	  <p>Katarzyna Nowak zdobyła wyróżnienie na Ogólnopolskim Konkursie "Impresje muzyczne". <img src="zdjecia/news_1_5.jpg"> <button class="button_a"><a href="aktualnosci.html#news_5">Przeczytaj więcej</a></button></p> 
+	</div>
 
-            <li>
-              <a target="_blank" href="http://instagram.com/">
-                <img width="30" alt="Obserwuj nas na Instagramie!" src="zdjecia/instagram.png">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/">
-                <img width="30" alt="Obserwuj nas na Twitterze!" src="zdjecia/twitter.png">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/">
-                <img width="30" alt="Subskrybuj nasz kanał na YouTube!" src="zdjecia/youtube.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col">
-        <div>
-          <img id="logo-footer" width="140" src="zdjecia/logo.jpg">
-        </div>
-      </div>
-    </div>
-  </footer>
+	<div id="2021" class="tabcontent">
+	  <h3>2021</h3>
+	  <p>Sara Leokadia Sudoł zajęła I miejsce na VII Międzynarodowym Konkursie Pianistycznym im. Witolda Lutosławskiego w kategorii wiekowej 10-13 lat.<img src="zdjecia/news2_2.jpg"></img><button class="button_a"><a href="aktualnosci2.html#news_2">Przeczytaj więcej</a></button></p> 
+	  <p>Stanisław Złot zajął II miejsce I Ogólnopolskim Konkursie "Młodzi muzycy".<img src="zdjecia/news2_3.jpg"></img><button class="button_a"><a href="aktualnosci2.html#news_3">Przeczytaj więcej</a></button></p>
+	</div>
+
+	<div id="2020" class="tabcontent">
+	  <h3>2020</h3>
+	  <p>Antoni Kowalski zajął III miejsce na VI Międzynarodowym Konkursie Pianistycznym im. Witolda Lutosławskiego w kategorii wiekowej 15-17 lat.<img src="zdjecia/news3_2.jpg"></img><button class="button_a"><a href="aktualnosci3.html#news_2">Przeczytaj więcej</a></button></p> 
+	  <p>Sara Leokadia Sudoł zajęła IV miejsce na VI Międzynarodowym Konkursie Pianistycznym im. Witolda Lutosławskiego w kategorii wiekowej do 10 lat.<img src="zdjecia/news3_3.jpg"></img><button class="button_a"><a href="aktualnosci3.html#news_2">Przeczytaj więcej</a></button></p> 
+	  <p>Stanisław Złot i Antoni Kowalski zajęli I miejsce na III Ogólnopolskim Festiwalu "Duety". <img src="zdjecia/news3_4.jpg"></img> <button class="button_a"><a href="aktualnosci3.html#news_3">Przeczytaj więcej</a></button></p> 
+	  
+	</div>
+</div>
+
+<footer>
+		<div class="footer">
+			<div class="col">
+				<div class="footer-list-wrap">
+					<h6 class="footer-header">KONTAKT</h6>
+					<ul class="footer-links-sub">
+						<li>Telefon komórkowy: 123456789</li>
+						<li>Telefon stacjonarny: 987654321</li>
+						<li>Adres: al. Adama Mickiewicza 30, Kraków </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div class="footer-list-wrap">
+					<h6 class="footer-header">Godziny otwarcia sekretariatu:</h6>
+					<ul class="footer-links-sub">
+						<li>Poniedziałek: 8.00-16.00</li>
+						<li>Wtorek: 10.00-14.00</li>
+						<li>Środa: 8.00-16.00</li>
+						<li>Czwartek: 10.00-14.00</li>
+						<li>Piątek: 8.00-16.00</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div class="footer-social">
+					<h6 class="footer-header">Nasze media społecznościowe</h6>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/">
+								<img width="30" alt="Polub nas na Facebooku!" src="zdjecia/facebook.png">
+							</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="http://instagram.com/">
+								<img width="30" alt="Obserwuj nas na Instagramie!" src="zdjecia/instagram.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/">
+								<img width="30" alt="Obserwuj nas na Twitterze!" src="zdjecia/twitter.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<img width="30" alt="Subskrybuj nasz kanał na YouTube!" src="zdjecia/youtube.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div>
+					<img id="logo-footer" width="140" src="zdjecia/logo.jpg">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+  
 </body>
 
 </html>
