@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="author" content="Strona współtworzona przez: Anna Kaniowska, Marta Kopeć.">
+  <meta name="keywords" content="szkoła muzyczna, kraków, muzyczna, zajęcia dodatkowe, zajęcia pozalekcyjne, muzyka">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="planzajec.css">
   <title>Plan zajęć</title>
   <link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
@@ -13,7 +16,8 @@
     <a href="stronaglowna.html">
       <img id="main_logo_img" src="zdjecia/logo_glowne_v3.jpg"></img>
     </a>
-    <div>
+  
+  </div>
 
       <div id="menu-container">
         <ul id="menu" class="Menu-container">
@@ -111,7 +115,7 @@
                     <img width="30" alt="Polub nas na Facebooku!" src="zdjecia/facebook.png">
                   </a>
                 </li>
-
+    
                 <li>
                   <a target="_blank" href="http://instagram.com/">
                     <img width="30" alt="Obserwuj nas na Instagramie!" src="zdjecia/instagram.png">
@@ -137,6 +141,22 @@
           </div>
         </div>
       </footer>
+        <button onclick="nagore()" id="nagore">&#8593;</button>
+        <script>
+
+          przycisk = document.getElementById("nagore");
+
+          window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              przycisk.style.display = "block";
+            } else {
+              przycisk.style.display = "none";
+            }
+          };
+          function nagore() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        </script>
 </body>
 
 </html>

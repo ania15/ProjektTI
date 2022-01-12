@@ -156,9 +156,28 @@
      
  
   
+#nagore {
+  display: none; 
+  position: fixed; 
+  bottom: 70px; 
+  right: 15px; 
+  background-color: white; 
+  border: 2px solid black;
+  color: black; 
+  cursor: pointer;
+  border-radius: 50%; 
+  font-size: 18px; 
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+}
+
+#nagore:hover {
+  background-color: #555; 
+}
   
    
-     @media screen and (max-width: 900px) {
+     @media screen and (max-width: 930px) {
       #menu{
         display: flex;
         flex-direction: column;
@@ -274,8 +293,8 @@
   .close {
     color: white;
     position: absolute;
-    top: 4%;
-    right: 10%;
+    top: 0;
+    right: 15%;
     font-size: 60px;
     font-weight: bold;
   }
@@ -365,7 +384,7 @@
               right:20px;
           }
         }
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 930px){
           .gallery{
             margin:0;
             padding:100px 0;

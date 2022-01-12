@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="author" content="Strona współtworzona przez: Anna Kaniowska, Marta Kopeć.">
+	<meta name="keywords" content="szkoła muzyczna, kraków, muzyczna, zajęcia dodatkowe, zajęcia pozalekcyjne, muzyka">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="instrumenty.css">
   <title>Instrumenty</title>
   <link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
@@ -10,7 +13,9 @@
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script>
     $(document).ready(function () {
-      $('.button').click(function (e) {
+      $('.button').click(function(e) {
+
+        e.preventDefault();
 
         var targetBox = $(this).attr('id');
         $('.text').not(targetBox).hide(1000);
@@ -188,6 +193,22 @@
     </div>
   </footer>
   </div>
+  <button onclick="nagore()" id="nagore">&#8593;</button>
+	<script>
+
+		przycisk = document.getElementById("nagore");
+
+		window.onscroll = function () {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				przycisk.style.display = "block";
+			} else {
+				przycisk.style.display = "none";
+			}
+		};
+		function nagore() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+	</script>
 </body>
 
 </html>
