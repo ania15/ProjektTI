@@ -151,9 +151,10 @@ z-index: 2;
    }
    
  
- h1 {
+ h1, h4 {
 	 text-align: center;
  }
+ 
  
 .news {
 	position: relative;
@@ -167,14 +168,17 @@ z-index: 2;
 	position:relative;
 	margin: auto;
 	display:block;
-	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width:50%;
 	height:20%;
+	box-shadow: 10px 10px 8px #888888;
 }
 
-#more_1 {display: none;}
-#more_2 {display: none;}
-#more_3 {display: none;}
+#more_1, #more_2, #more_3 { 
+	display: none;
+}
+
 
 .button_a {
   background-color: black;
