@@ -25,6 +25,7 @@
 	opacity:0.99;
 	background-color:white;
 	width:65%;
+	box-shadow: 10px 10px 10px 10px white;
  }
  
  #main_logo {
@@ -265,9 +266,11 @@ z-index: 2;
 	position:relative;
 	margin: auto;
 	display:block;
-	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width:50%;
 	height:20%;
+	box-shadow: 10px 10px 8px #888888;
 }
 
 
