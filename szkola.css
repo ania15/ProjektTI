@@ -16,32 +16,6 @@
     left: 0px;
     opacity: 0.3;
    }
-
-html::-webkit-scrollbar {
-    width: 15px;
-  }
-
-html::-webkit-scrollbar-track {
-    background: white;
-    border-radius: 10px;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: #999999;
-    border-radius: 15px;
-  }
-
-html::-webkit-scrollbar-thumb:hover {
-    background: grey;
-    border-radius: 15px;
-  }
-
-html::-webkit-scrollbar-thumb:active {
-    background: #454545;
-    border-radius: 15px;
-  }
-
-
    
 #main_logo_img {
 	display: block;
@@ -259,9 +233,7 @@ z-index: 2;
    top: 0;
    left: 180px;
   } 
-  #nagore{
-    
-  }
+  
  }
 
 @media screen and (max-width: 650px) {
