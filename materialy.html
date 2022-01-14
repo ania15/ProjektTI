@@ -9,7 +9,37 @@
   <title>Materiały </title>
   <link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    $(".button").click(function() {
+        $(this).parent().nextAll('.toggle_hide').first().slideToggle('slow');
+    });
+});
+
+function openW(html)
+{
+	window.open(html,'_blank', 'menubar=no, width=550, height=750, resizable=no');
+}
+ 
+$(document).ready(function() {
+  $('audio').on("play", function (playing_audio) {
+    $('audio').each(function (i, audio) {
+      if (audio !== playing_audio.currentTarget) {
+        this.pause(); 
+      }
+    });
+  });
+})
+
+</script>
+
 </head>
+
+
+
 
 <body>
   
@@ -52,6 +82,153 @@
 			</li>
 		</ul>
     </div>
+	<br><br><br>
+	
+	<h2>Materiały dodatkowe</h2>
+<div class="materialy">
+
+<p><a class="button">NUTY</a><p>
+<div class="toggle_hide">
+    <div class="materials" id="notes_sheets">
+        	<h5>Kliknij na obrazek, aby obejrzeć nuty i je wydrukować!</h5>
+		<div class="container" onclick="openW('notes_1.html')">	
+			<img src="zdjecia/notes_1.jpg"></img>
+			<div class="overlay">
+				<div class="text">Twinkle, Twinkle Little Star</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('notes_2.html')">	
+			<img src="zdjecia/notes_2.jpg"></img>
+			<div class="overlay">
+				<div class="text">Koncert A-moll A.Vivaldi</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('notes_3.html')">	
+			<img src="zdjecia/notes_3.jpg"></img>
+			<div class="overlay">
+				<div class="text">Menuet 2 J.S.Bach</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('notes_4.html')">	
+			<img src="zdjecia/notes_4.jpg"></img>
+			<div class="overlay">
+				<div class="text">Koncert D-dur J.S.Bach</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('notes_5.html')">	
+			<img src="zdjecia/notes_5.jpg"></img>
+			<div class="overlay">
+				<div class="text">Humoresque A.Dvorak</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('notes_6.html')">	
+			<img src="zdjecia/notes_6.jpg"></img>
+			<div class="overlay">
+				<div class="text">Hunters' Chorus C.M v Weber</div>
+			</div>
+		</div>	
+		
+	
+	
+    </div>
+</div>
+
+
+<p><a class="button">AUDIO</a><p>
+<div class="toggle_hide">
+    <div class="materials" id="audio">
+        <div class="audio_container">
+		<h3>Humoresque · A.Dvorak:</h3>
+		  <audio controls>
+			<source src="audio/audio_1.mp3" type="audio/mpeg">
+			Twoja przeglądarka nie obsługuje tego elementu.
+		  </audio> 
+		</div>
+    </div>
+	
+	<div class="materials" id="audio">
+        <div class="audio_container">
+		<h3>Miroirs: III. Une barque sur l'océan · A.Laplante:</h3>
+		  <audio controls>
+			<source src="audio/audio_2.mp3" type="audio/mpeg">
+			Twoja przeglądarka nie obsługuje tego elementu.
+		  </audio> 
+		</div>
+    </div>
+	
+	
+	<div class="materials" id="audio">
+        <div class="audio_container">
+		<h3>Koncert A-moll · A.Vivaldi:</h3>
+		  <audio controls>
+			<source src="audio/audio_3.mp3" type="audio/mpeg">
+			Twoja przeglądarka nie obsługuje tego elementu.
+		  </audio> 
+		</div>
+    </div>
+	
+	<div class="materials" id="audio">
+        <div class="audio_container">
+		<h3>Hallelujah Junction: 1st Movement · John Adams:</h3>
+		  <audio controls>
+			<source src="audio/audio_4.mp3" type="audio/mpeg">
+			Twoja przeglądarka nie obsługuje tego elementu.
+		  </audio> 
+		</div>
+    </div>
+	
+	<div class="materials" id="audio">
+        <div class="audio_container">
+		<h3>Summer 3 Recomposed: Vivaldi's Four Seasons · Max Richter:</h3>
+		  <audio controls>
+			<source src="audio/audio_5.mp3" type="audio/mpeg">
+			Twoja przeglądarka nie obsługuje tego elementu.
+		  </audio> 
+		</div>
+    </div>
+	
+	<div class="materials" id="audio">
+        <div class="audio_container">
+		<h3>Spring 1 Recomposed: Vivaldi's Four Seasons · Max Richter:</h3>
+		  <audio controls>
+			<source src="audio/audio_6.mp3" type="audio/mpeg">
+			Twoja przeglądarka nie obsługuje tego elementu.
+		  </audio> 
+		</div>
+    </div>
+	
+	
+</div>
+
+<p><a class="button">WIDEO</a><p>
+<div class="toggle_hide">	
+<div class="materials" id="video">
+        <div class="video_container">
+			<h3>Jak zagrać utwór 1?:</h3>
+			<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+			</iframe>
+		</div>
+		
+		<div class="video_container">
+			<h3>Jak zagrać utwór 2?:</h3>
+			<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+			</iframe>
+		</div>
+		
+		<button class="button_a"><a href="https://www.youtube.com/" class="link">Odwiedź nasz kanał na youtubie!</a></button>
+   
+</div>
+</div>
+
+
+</div>
+	
+	
 	
   <footer>
     <div class="footer">
