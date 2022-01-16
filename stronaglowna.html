@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="stronaglowna.css">
 	<title>Szkoła muzyczna </title>
 	<link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
-
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script>
 		function plus_slides(n) {
 			show_slides(slide_index += n);
@@ -61,7 +61,19 @@
 </head>
 
 <body>
+	<div id="landing">
 
+		<h1>Szkoła muzyczna Nutki</h1>
+		<p>Witamy w najlepszej prywatnej szkole muzycznej w Krakowie.</p>
+		<button id="btn">Wchodzę!</button>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("#landing").slideToggle();
+			});
+		});
+	</script>
 	<div id="main_logo">
 		<a href="stronaglowna.html">
 			<img id="main_logo_img" src="zdjecia/logo_glowne_v3.jpg"></img>

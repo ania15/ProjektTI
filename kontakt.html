@@ -7,6 +7,7 @@
 	<meta name="keywords" content="szkoła muzyczna, kraków, muzyczna, zajęcia dodatkowe, zajęcia pozalekcyjne, muzyka">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="kontakt.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <title>Kontakt</title>
   <link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
 
@@ -110,6 +111,35 @@
        
     </div>
   </div>
+
+  <div id="kontakt">
+    <h1>Skontaktuj się z nami!</h1>
+    <p id="info">Napisz do nas wiadomość - opinię, sugestię, lub po prostu coś czym chciałbyś się podzielić. Zostaw maila do siebie,
+      a odezwiemy się tak szybko jak się da.
+    </p>
+    <form>
+  
+      <label for="imie">Imię</label>
+      <input type="text" id="imie" name="imie" placeholder="Imię...">
+  
+      <label for="nazwisko">Nazwisko</label>
+      <input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko...">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Email...">
+  
+      <label for="wiadomosc">Twoja wiadomość</label>
+      <textarea id="wiadomosc" name="wiadomosc" placeholder="Wiadomość..." style="height:200px"></textarea>
+  
+      <button id="btn">Wyślij</button>
+  
+    </form>
+    <script>
+    $("#btn").click(function(event){
+      event.preventDefault();
+    });</script>
+  </div>
+
 
   <footer>
     <div class="footer">

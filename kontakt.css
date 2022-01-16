@@ -201,63 +201,7 @@ z-index: 2;
 #nagore:hover {
   background-color: #555; 
 }
-   
-   @media screen and (max-width: 930px) {
-    #menu{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin:auto;
-      padding:0;
-    }
-    #menu li ul{
-     position: absolute;
-     top: 0;
-     left: 180px;
-    } 
-    
-   }
 
-@media screen and (max-width: 650px) {
-
-  #main_logo_img, #main_logo{
-    width:100%;
-    margin:auto;
-    padding:0;
-  }
-
-
-  .footer {
-    flex-wrap: wrap;
-    background-color: black;
-    height:300px;
-    font-size:small;
-    align-items: center;
-    justify-content: center;
-    margin:0;
-    padding:0;
-  }
-  .footer .col{
-    flex:50%;
-  }
-  .footer-list-wrap{
-    position: absolute;
-    top:20px;
-    margin: 5px;
-  }
-  .footer-social{
-    position:absolute;
-    left: 50px;
-    bottom: 30px;
-  }
-  #logo-footer{
-    position: absolute;
-    bottom:30px;
-    right:60px;
-  }
-  
-}
 
 
 #contact-info{
@@ -316,4 +260,120 @@ z-index: 2;
   transform: translate(-50%, -50%);
   text-align: center;
   text-decoration: none;
+}
+
+#kontakt{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  margin: auto;
+  font-family: 'Cambria', Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding:  20px 50px;
+  margin-bottom:50px;
+  text-align: center;
+  width: 800px;
+}
+
+#info{
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical 
+}
+
+#btn{
+  font-size:18px;
+  text-decoration:none;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-top:20px;
+  cursor: pointer;
+  margin: auto;
+}
+
+#btn:hover{
+  background-color: black;
+  color: white;
+}
+
+   
+@media screen and (max-width: 930px) {
+  #menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding:0;
+  }
+  #menu li ul{
+   position: absolute;
+   top: 0;
+   left: 180px;
+  } 
+
+  #kontakt{
+    width: 500px;
+  }
+  
+ }
+
+@media screen and (max-width: 650px) {
+
+#main_logo_img, #main_logo{
+  width:100%;
+  margin:auto;
+  padding:0;
+}
+
+
+.footer {
+  flex-wrap: wrap;
+  background-color: black;
+  height:300px;
+  font-size:small;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+.footer .col{
+  flex:50%;
+}
+.footer-list-wrap{
+  position: absolute;
+  top:20px;
+  margin: 5px;
+}
+.footer-social{
+  position:absolute;
+  left: 50px;
+  bottom: 30px;
+}
+#logo-footer{
+  position: absolute;
+  bottom:30px;
+  right:60px;
+}
+#kontakt{
+  width: 250px;
+}
+
+
 }
