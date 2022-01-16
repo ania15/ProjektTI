@@ -11,6 +11,14 @@
   <link rel="icon" href="zdjecia/logo.jpg" type="image/icon type">
 </head>
 
+<script>
+function openW(html)
+{
+	window.open(html,'_blank', 'menubar=no, width=550, height=750, resizable=no');
+}
+
+</script>
+
 <body>
   <div id="main_logo" class="no_print">
     <a href="stronaglowna.html">
@@ -54,31 +62,62 @@
       </div>
       <br><br><br>
 
+<h2>Plany zajęć</h2>
+<div class="plany">
+
+<h5>Kliknij na obrazek, aby obejrzeć plan i go wydrukować!</h5>
+
+<div class="plany_cont">
 
 
-      <div class="schedule_form no_print">
-        <form>
-          <label for="plan">Wybierz swoje zajęcia:</label>
-          <select name="plany" id="plany">
-            <optgroup label="Instrumenty">
-              <option value="gitara">gitara</option>
-              <option value="skrzypce">skrzypce</option>
-              <option value="perkusja">perkusja</option>
-              <option value="pianino">pianino</option>
-              <option value="bas">gitara basowa</option>
-              <option value="kontrabas">kontrabas</option>
-            </optgroup>
-            <optgroup label="Inne">
-              <option value="rytmika">Rytmika dla najmłodszych</option>
-            </optgroup>
-          </select>
-          <br><br>
-          <input class="button_a" type="submit" value="Pokaż plan">
-        </form>
+		
+		<div class="container" onclick="openW('plan_1.html')">	
+			<img src="zdjecia/gitara.jpg"></img>
+			<div class="overlay">
+				<div class="text">GITARA</div>
+			</div>
+		</div>		
+		
+		<div class="container" onclick="openW('plan_2.html')">	
+			<img src="zdjecia/skrzypce.jpg"></img>
+			<div class="overlay">
+				<div class="text">SKRZYPCE</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('plan_3.html')">	
+			<img src="zdjecia/perkusja.jpg"></img>
+			<div class="overlay">
+				<div class="text">PERKUSJA</div>
+			</div>
+		</div>
 
-        <button class="button_a" id="button_print" onclick="window.print()">Wydrukuj swój plan !</button>
+		<div class="container" onclick="openW('plan_4.html')">	
+			<img src="zdjecia/pianino.jpg"></img>
+			<div class="overlay">
+				<div class="text">PIANINO FORTEPIAN</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('plan_5.html')">	
+			<img src="zdjecia/gitarab.jpg"></img>
+			<div class="overlay">
+				<div class="text">GITARA BASOWA</div>
+			</div>
+		</div>	
+		
+		<div class="container" onclick="openW('plan_6.html')">	
+			<img src="zdjecia/rytmika.jpg"></img>
+			<div class="overlay">
+				<div class="text">RYTMIKA</div>
+			</div>
+		</div>	
+		
 
-      </div>
+</div>
+</div>
+
+      
 
 
 
