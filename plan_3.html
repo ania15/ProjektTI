@@ -1,0 +1,173 @@
+<!DOCTYPR html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+
+<style>
+body {
+	font-family: 'Cambria', Arial, Helvetica, sans-serif;
+}
+
+h2{
+	text-align:center;
+}
+
+.button_a {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  padding: 6px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 4px 2px;
+}
+
+.button_a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.button_a:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+#button_print {
+	display:block;
+    margin-left:  auto;
+    margin-right: 0;
+}
+
+@media print {
+  .print{
+    display:none;
+  }
+}
+
+table, td, th {  
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+	padding: 15px;
+}
+
+.alert {
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+
+<script>
+function print_div(div_name) {
+     var print_contents = document.getElementById(div_name).innerHTML;
+     var original_contents = document.body.innerHTML;
+
+     document.body.innerHTML = print_contents;
+
+     window.print();
+
+     document.body.innerHTML = original_contents;
+}
+
+</script>
+
+<body>
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>UWAGA!</strong> Terminy lekcji indywidualnych (wybrane z godzin na planie) ustalamy na początku każdego miesiąca w sekretariacie!
+</div>
+
+<h2>Plan zajęć dla grup perkusji</h2>
+<div id="print_this" >
+ <table>
+  <tr>
+    <th>Zajęcia grupowe</th>
+    <td>grupa 1</td>
+	<td>Wtorek</td>
+    <td>16:00 - 17:30</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Zajęcia grupowe</th>
+    <td rowspan="2">grupa 2</td>
+    <td>Środa</td>
+    <td>15:00 - 16:30</td>
+  </tr>
+  <tr>
+    <td>Piątek</td>
+    <td>14:00 - 15:30</td>
+  </tr>
+  
+ 
+  <tr>
+    <th rowspan="3">Lekcje indywidualne*</th>
+    <td rowspan="3">grupa 1</td>
+    <td>Środa</td>
+    <td>14:00 - 15:30</td>
+  </tr>
+  <tr>
+    <td>Czwartek</td>
+    <td>15:00 - 16:30</td>
+  </tr>
+  <tr>
+    <td>Piątek</td>
+    <td>16:00 - 17:30</td>
+  </tr>
+  
+  <tr>
+    <th rowspan="3">Lekcje indywidualne*</th>
+    <td rowspan="3">grupa 2</td>
+    <td>Poniedziałek</td>
+    <td>15:00 - 16:00</td>
+  </tr>
+  <tr>
+    <td>Wtorek</td>
+    <td>14:00 - 15:00</td>
+  </tr>
+  <tr>
+    <td>Piątek</td>
+    <td>15:00 - 16:00</td>
+  </tr>
+</table> 
+</div>
+<button class="button_a" id="button_print" onclick="print_div('print_this')">Wydrukuj swój plan!</button>
+
+</body>
+</html>
