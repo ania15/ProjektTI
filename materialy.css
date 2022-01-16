@@ -376,6 +376,10 @@ h2{
    left: 180px;
   } 
   
+  .container {
+	width:150px;
+  }
+  
  }
 
 @media screen and (max-width: 650px) {
