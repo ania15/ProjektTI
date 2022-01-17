@@ -101,11 +101,11 @@ display: none;
 display: block;
 z-index: 2;
 } 
- h2{
+ h1{
   text-align: center;
   font-family: 'Cambria', Arial, Helvetica, sans-serif;
   position: relative;
-
+  margin:20px;
  }
 
  #instrumenty{

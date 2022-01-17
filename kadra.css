@@ -114,7 +114,8 @@ z-index: 2;
  .row{
    display: flex;
    clear: both;
-   padding: 0px 200px 20px 200px;
+   margin: auto;
+   width: 900px;
    
  }
  .column{
@@ -251,7 +252,8 @@ z-index: 2;
 
   .row{
     flex-direction: column;
-    margin:0;
+    width: 600px;
+
     padding:40px;
   }
   .card{
@@ -270,7 +272,9 @@ z-index: 2;
   margin:auto;
   padding:0;
 }
-
+.row{
+  width: 300px;
+}
   
  
  
